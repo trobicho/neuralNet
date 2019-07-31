@@ -1,0 +1,4 @@
+NeuralNet.o: NeuralNet.cpp NeuralNet.h Layer.h Abs_layer.h Sigmoide.h \
+ ActivFunc.h
+Layer.o: Layer.cpp Layer.h Abs_layer.h Sigmoide.h ActivFunc.h
+ConvLayer.o: ConvLayer.cpp ConvLayer.h
