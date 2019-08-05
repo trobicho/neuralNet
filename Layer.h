@@ -20,8 +20,8 @@ class Layer: public Abs_layer
 
         void set_nbNeuron(int n);
         void set_nbNeuronWeight(int n);
-        void set_neuronVector(std::shared_ptr<std::vector<s_neuron>> neuron){m_neuron=neuron;}
-        std::shared_ptr<std::vector<s_neuron>> get_neuronVector(){return m_neuron;}
+        void set_neuronVector(std::shared_ptr<std::vector<s_neuron> > neuron){m_neuron=neuron;}
+        std::shared_ptr<std::vector<s_neuron> > get_neuronVector(){return m_neuron;}
 
         int get_nbNeuron(){return m_nbNeuron;}
         int get_nbNeuronWeight(){return m_nbNeuronWeight;}
@@ -67,7 +67,7 @@ class Layer: public Abs_layer
         }
 
     private:
-        std::shared_ptr<std::vector<s_neuron>> m_neuron=NULL;
+        std::shared_ptr<std::vector<s_neuron> > m_neuron=nullptr;
         std::vector<double> m_result;
         int m_nbNeuron;
         int m_nbNeuronWeight;
