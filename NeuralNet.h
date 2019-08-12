@@ -8,6 +8,7 @@ class NeuralNet
         NeuralNet(int nbEntrie):m_nbEntrie(nbEntrie){};
         NeuralNet(int nbEntrie, int nbNeuronOut, unsigned int nbHLayer=0);
         ~NeuralNet();
+		int	getNbLayer(void){return (m_nbLayer);}
         int addLayer(int pos, Layer layer);
         void addLayerFront(Layer layer);
         void addLayerBack(Layer layer);

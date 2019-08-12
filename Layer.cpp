@@ -81,7 +81,7 @@ void Layer::initNeuronWeight(int n)
     {
         for(int w=0; w<m_nbNeuronWeight; w++)
         {
-            m_neuron->at(n).weight[w]=f_rand(0, 100)/10.0;
+            m_neuron->at(n).weight[w]=f_rand(-1000, 1000)/1000.0;
         }
     }
 }
@@ -94,7 +94,7 @@ void Layer::initNeuronWeight(void)
         {
             for(int w=0; w<m_nbNeuronWeight; w++)
             {
-                m_neuron->at(n).weight[w]=f_rand(0, 100)/10.0;
+				m_neuron->at(n).weight[w]=f_rand(-1000, 1000)/1000.0;
             }
         }
     }
