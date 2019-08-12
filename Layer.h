@@ -27,6 +27,8 @@ class Layer: public Abs_layer
         int get_nbNeuronWeight(){return m_nbNeuronWeight;}
         int get_max();
         std::vector<double>& get_result(){return m_result;}
+
+		s_neuron&	get_neuron_at_n(int n){return (m_neuron->at(n));}
         
         template <typename T>
         std::vector<double>& calc(const std::vector<T> &entrie)
